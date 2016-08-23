@@ -4,4 +4,7 @@ package 'apache2' do
   retry_delay 5
   action :install
 end
+package 'git' do
+  action :/tmp/install
+end
 
