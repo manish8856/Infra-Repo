@@ -4,7 +4,7 @@ package 'apache2' do
   retry_delay 5
   action :install
 end
-package 'git' do
+package 'htop' do
   action :/tmp/install
 end
 if node[:opsworks_postgresql] && ([:devel_package, :client_package].all? {|s| node[:opsworks_postgresql].key? s})
